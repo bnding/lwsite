@@ -1,0 +1,82 @@
+
+/*global styles*/
+html { width: 1024px; height: 768px; margin:0 auto;}
+body {
+	margin:0px; padding:0;
+    width: 1024px;
+    height: 768px;
+    
+    overflow: hidden;
+	font-size:18px;
+	color:#4a4948;
+    -webkit-font-smoothing: antialiased; /* for desktop safari testing */
+    -webkit-touch-callout: none; /* prevent callout to copy image, etc when tap to hold */
+    -webkit-text-size-adjust: none; /* prevent webkit from resizing text to fit – not sure if we need this one*/
+    -webkit-tap-highlight-color: rgba(0,0,0,0); /* make transparent link selection, adjust last value opacity 0 to 1.0 */
+    -webkit-user-select: none; /* prevent copy paste, to allow, change 'none' to 'text' */
+}
+
+.container {
+	overflow: hidden;
+	-webkit-tap-highlight-color: rgba(0,0,0,0);;
+	width: 1024px; height: 768px;
+	position: relative;
+	-webkit-transform : translate3d(0,0,0); 
+	margin: 0px;padding: 0px;
+	top:0px;left:0px;
+	background:url(../images/bg.jpg) 0 0 repeat-x;
+}
+
+.header{
+	width:100%;
+	height:106px;
+	background: url(../images/header.jpg) 0 0 repeat-x;
+}
+
+.header .title, .header .titleright{margin-top:22px;}
+.header .titleblock{float:left; padding-left:107px; padding-top:22px; font-size:24px; height:106px;}
+h3 { font-weight:normal;}
+.titleblock h3{font-size:30px; margin:0; padding:0;}
+.titleright{float:right; margin-right:28px;}
+
+.content {width:100%; height:662px;position: relative;}
+.contentbox{width:780px; height:494px; background:#e6dfc1; margin:64px 119px 0px;-moz-border-radius: 8px; border-radius: 8px;position:relative;}
+
+.clear{ font-size: 1px; line-height: 1px; margin: 0px; padding: 0px; clear: both; }
+.left{float:left;}
+.right{float:right;}
+
+
+/****************  bottom nav   *****************************/
+
+
+
+
+/****************  home page content  *****************************/
+
+#homepage .header{text-align:center;}
+
+
+.hex{ position:absolute; text-align:center;}
+.hex h3{ margin:112px 10px 0px; display:block;}
+#rheumhex{ left:60px; top:20px;}
+#SOChex{left:380px; top:152px;}
+#gastrohex{left:700px; top:75px;}
+
+
+/****************  Rheumatology page content  *****************************/
+
+#rheumpage .titleblock{background:url(../images/rheumhexsmall.png) 20px 12px no-repeat;}
+#rheumpage .contentbox{width:680px; height:394px; padding:50px;line-height:50px;}
+
+
+/****************  SOC page content  *****************************/
+#socpage .titleblock{background:url(../images/SOChexsmall.png) 20px 12px no-repeat;}
+#socpage .contentbox { width:720px; height:454px;}
+#socpage .contentbox hr{color:#4a4948; background-color:#4a4948; height:1px;border:0;margin-top:2px;}
+
+/****************  Gastroenterology page content  *****************************/
+#gastropage .titleblock{background:url(../images/gastrohexsmall.png) 20px 12px no-repeat;}
+#gastropage .contentbox div{height:460px; margin-top:34px;}
+#gastropage .contentbox .left{width:250px; margin-left:32px; }
+

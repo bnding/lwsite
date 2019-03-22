@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<style>
+  /* importing custom fonts locally */
+  @import url('fonts/fonts-min.css');
+
+  h3 {
+    font-family: MyriadSemibold;
+    font-size: 150%;
+  }
+
+  /* make action faster */
+  a:link, :visited{
+    color: inherit
+  }
+
+  .hex {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+  }
+
+  .center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -80%);
+  }
+
+  .desc {
+    font-family: MyriadLightIt;
+    font-size: 110%;
+  }
+
+  #people {
+    position: relative;
+    top: -100px;
+  }
+
+
+
+  
+  
+
+
+
+</style>
+
+  <head>
+    <title>Clinical Talking Points</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    <meta name = "format-detection" content = "telephone=no">
+    <link rel="apple-touch-icon-precomposed" href="images/icon.png" />
+    <link rel="apple-touch-startup-image" href="images/startup.png" />
+    <link type="text/css" rel="stylesheet" href="css/ctpoints.css" />
+
+    <script type="text/javascript" src="js/jquery-1.8.3.min.js"></script>
+    <script type="text/javascript" src="js/iscroll.js"></script>
+    <script type="text/javascript" src="js/ctpoints.js"></script>
+
+  </head>
+  <body>
+    <div class="container" id='homepage'>
+    	<div class='header'>
+   	    <img src="images/title.png" width="667" height="87"  class='title' alt="Clinical Talking Points">
+      </div><!--end header-->
+
+    	<div class='content'>
+        <div class='hex' id='rheumhex' page='rheumatology'>
+          <a href="rheumatology.html"><img src="images/rheumhexbig.png" alt="Purple Button">
+            <div class='center'><h3>Rheumatology</h3>
+              <div class="desc">Research and <br/>Treatment</div>
+            </div>
+          </a>
+        </div>
+
+
+        <div class='hex' id='SOChex' page='soc'><h3>Site of Care</h3>Convenience, Control <br/>& Compliance</div>
+        <div class='hex' id='gastrohex' page='gastroenterology'><h3>Gastroenterology</h3>Crohn's Disease, <br/>Ulcerative Colitis</div>
+        <img src="images/people.png" alt="People" id="people">
+      </div><!--end content-->
+        
+
+      
+
+    </div><!--end container-->
+
+    
+
+    
+  </body>
+</html>
