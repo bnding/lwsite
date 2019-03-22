@@ -5,45 +5,44 @@
   /* importing custom fonts locally */
   @import url('fonts/fonts-min.css');
 
-  h3 {
+  h3{
     font-family: MyriadSemibold;
     font-size: 150%;
+    white-space: nowrap;
   }
 
-  /* make action faster */
   a:link, :visited{
     color: inherit
   }
 
   .hex {
-    position: absolute;
     top: 50%;
     left: 50%;
+    z-index: 10;
   }
 
   .center {
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -80%);
+    transform: translate(-50%, -85%);
+    display: inline;
+
   }
 
   .desc {
     font-family: MyriadLightIt;
     font-size: 110%;
+    white-space: nowrap;
   }
 
   #people {
     position: relative;
-    top: -100px;
+    top: 64%;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
   }
-
-
-
-  
-  
-
-
 
 </style>
 
@@ -71,18 +70,44 @@
 
     	<div class='content'>
         <div class='hex' id='rheumhex' page='rheumatology'>
-          <a href="rheumatology.html"><img src="images/rheumhexbig.png" alt="Purple Button">
-            <div class='center'><h3>Rheumatology</h3>
-              <div class="desc">Research and <br/>Treatment</div>
+          <a href="rheumatology.html">
+            <img src="images/rheumhexbig.png" alt="Purple Button">
+            <div class='center'>
+              <h3>Rheumatology</h3>
+              <div class='desc'>
+                Research and <br/>Treatment
+              </div>
             </div>
           </a>
         </div>
 
+        <div class='hex' id='SOChex' page='soc'>
+          <a href="soc.html">
+            <img src="images/SOChexbig.png" alt="Blue Button">
+            <div class='center'>
+              <h3>Site of Care</h3>
+              <div class='desc'>
+                Convenience, Control <br/>& Compliance
+              </div>
+            </div>
+          </a>
+        </div>
 
-        <div class='hex' id='SOChex' page='soc'><h3>Site of Care</h3>Convenience, Control <br/>& Compliance</div>
-        <div class='hex' id='gastrohex' page='gastroenterology'><h3>Gastroenterology</h3>Crohn's Disease, <br/>Ulcerative Colitis</div>
-        <img src="images/people.png" alt="People" id="people">
+        <div class='hex' id='gastrohex' page='gastroenterology'>
+          <a href="gastroenterology.html">
+            <img src="images/gastrohexbig.png" alt="Yellow Button">
+            <div class="center">
+              <h3>Gastroenterology</h3>
+              <div class="desc">
+                Crohn's Disease, <br/>Ulcerative Colitis
+              </div>
+            </div>
+          </a>
+        </div>
+
+      <img src="images/people.png" alt="People" id="people">
       </div><!--end content-->
+      
         
 
       
