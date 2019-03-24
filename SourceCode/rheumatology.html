@@ -1,45 +1,129 @@
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml">
-  <head>
-    <title>Clinical Talking Points</title>
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
-    <meta name="apple-mobile-web-app-capable" content="yes" />
-    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
-    <meta name = "format-detection" content = "telephone=no">
-    <link rel="apple-touch-icon-precomposed" href="images/icon.png" />
-    <link rel="apple-touch-startup-image" href="images/startup.png" />
-    <link type="text/css" rel="stylesheet" href="css/ctpoints.css" />
 
-    <script type="text/javascript" src="js/jquery-1.8.3.min.js"></script>
-    <script type="text/javascript" src="js/iscroll.js"></script>
-    <script type="text/javascript" src="js/ctpoints.js"></script>
+<head>
+  <style>
+    @import url('fonts/fonts-min.css');
 
-  </head>
-  <body>
+    h3 {
+      font-family: MyriadSemibold;
+    }
 
-    <div class="container" id='rheumpage'>
+    .titleblock {
+      font-family: MyriadLightIt;
+    }
+
+    .contentbox {
+      font-family: MyriadLightIt;
+      font-size: x-large;
+    }
+
+    .image {
+      text-align: right;
+      padding-right: 25px;
+    }
+
+    #ref {
+      display: block;
+      margin-top: 16.5%;
+      margin-left: auto;
+      margin-right: auto;
+      cursor: pointer;
+    }
+
+    #popup {
+      display: none;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+
+    #close {
+      display: none;
+      position: absolute;
+      top: 20.5%;
+      right: 14.5%;
+      transform: translate(-50%, -50%);
+      cursor: pointer;
+    }
+
+
     
-    	<div class='header'>
-   	    	<div class='titleblock'><h3>Rheumatology</h3>Research and Treatment</div>
-            <img src="images/titleright.png" width="368" height="47"  class='' alt="Clinical Talking Points">
-            <div class='clear'></div>
-        </div><!--end header-->
-        
-    	<div class='content'>
-    		<div class='contentbox'>
-            	Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint 
-                
-            </div><!--end contentbox-->
-            
-            
-            
-        </div><!--end content-->
-        
-    </div><!--end container-->
+  </style>
+  <title>Clinical Talking Points</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  <meta name="format-detection" content="telephone=no">
+  <link rel="apple-touch-icon-precomposed" href="images/icon.png" />
+  <link rel="apple-touch-startup-image" href="images/startup.png" />
+  <link type="text/css" rel="stylesheet" href="css/ctpoints.css" />
 
-    
+  <script type="text/javascript" src="js/jquery-1.8.3.min.js"></script>
+  <script type="text/javascript" src="js/iscroll.js"></script>
+  <script type="text/javascript" src="js/ctpoints.js"></script>
 
-    
-  </body>
+  <script>
+
+    $(document).ready(function () {
+      $('#ref').on('click', function () {
+        $('#popup').fadeIn();
+        $('#close').fadeIn();
+      });
+
+      $('#close').on('click', function () {
+        $('#popup').fadeOut();
+        $('#close').fadeOut();
+      });
+    });
+
+
+
+  </script>
+
+</head>
+
+<body>
+
+  <div class="container" id='rheumpage'>
+
+
+
+    <div class='header'>
+      <div class='titleblock'>
+        <h3>Rheumatology</h3>Research and Treatment
+      </div>
+      <div class='image'>
+        <img src="images/titleright.png" width="368" height="47" class='title' alt="Clinical Talking Points">
+      </div>
+      <div class='clear'></div>
+    </div>
+    <!--end header-->
+
+    <div class='content'>
+      <div class='contentbox'>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore
+        magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+        consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+        pariatur. Excepteur sint
+
+        <img id="ref" src="images/refbttn.png">
+
+
+      </div>
+      <!--end contentbox-->
+    </div>
+    <!--end content-->
+    <img src="images/popup.png" id='popup' alt="Popup Image">
+    <img src="images/xbttn.png" id='close' alt="Close Button">
+  </div>
+  <!--end container-->
+
+
+
+
+</body>
+
 </html>
