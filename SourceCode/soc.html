@@ -1,44 +1,195 @@
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml">
-  <head>
-    <title>Clinical Talking Points</title>
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
-    <meta name="apple-mobile-web-app-capable" content="yes" />
-    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
-    <meta name = "format-detection" content = "telephone=no">
-    <link rel="apple-touch-icon-precomposed" href="images/icon.png" />
-    <link rel="apple-touch-startup-image" href="images/startup.png" />
-    <link type="text/css" rel="stylesheet" href="css/ctpoints.css" />
 
-    <script type="text/javascript" src="js/jquery-1.8.3.min.js"></script>
-    <script type="text/javascript" src="js/iscroll.js"></script>
-    <script type="text/javascript" src="js/ctpoints.js"></script>
+<head>
+  <style>
+    @import url('fonts/fonts-min.css');
 
-  </head>
-  <body>
+    h3 {
+      font-family: MyriadSemibold;
+    }
 
-    <div class="container" id='socpage'>
-    
-    	<div class='header'>
-   	    	<div class='titleblock'><h3>Site of Care</h3>Convenience, Control & Compliance</div>
-            <img src="" width="368" height="47"  class='' alt="Clinical Talking Points">
-            <div class='clear'></div>
-        </div><!--end header-->
-        
-    	<div class='content'>
-    		<div class='contentbox'>
-            	
-            </div><!--end contentbox-->
-            
-            
-            
-        </div><!--end content-->
-        
-    </div><!--end container-->
+    hr {
+      position: relative;
+      top: 50px;
+      width: 95%;
+    }
 
-    
+    .titleblock {
+      font-family: MyriadLightIt;
+    }
 
-    
-  </body>
+    .contentbox {
+      font-family: MyriadLightIt;
+      font-size: x-large;
+    }
+
+    .title {
+      padding: 15px;
+      top: -25px;
+      left: 5px;
+      font-size: 25px;
+      position: absolute;
+    }
+
+    .image {
+      position: absolute;
+      text-align: right;
+      top: 10px;
+      right: 424px;
+    }
+
+    .topicbackground {
+      position: relative;
+      /* float: left; */
+      bottom: 0;
+      margin-left: 50px;
+    }
+
+    .index {
+      position: relative;
+      margin-left: 75px;
+      bottom: -98px;
+    }
+
+    .buttons {
+      position: relative;
+      float: left;
+      margin-left: 155px;
+      bottom: -47px;
+      width: 100px
+    }
+
+    .menubar {
+      margin-left: 16px;
+    }
+
+    .hometext {
+      position: absolute;
+      bottom: -7px;
+      margin-left: 90px;
+      /* width: inherit; */
+      float: inherit;
+      white-space: nowrap;
+      color: white;
+    }
+
+    .rheum {
+      position: absolute;
+      bottom: -7px;
+      margin-left: 75px;
+      float: inherit;
+      white-space: nowrap;
+      color: #FFEB56;
+
+    }
+
+    .gastro {
+      position: absolute;
+      bottom: -7px;
+      margin-left: 65px;
+      float: inherit;
+      white-space: nowrap;
+      color: #FFEB56;
+    }
+
+    .chart {
+      position: absolute;
+      width: 600px;
+      display: none;
+      left: 55px;
+      bottom: 35px;
+    }
+  </style>
+
+
+  <title>Clinical Talking Points</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  <meta name="format-detection" content="telephone=no">
+  <link rel="apple-touch-icon-precomposed" href="images/icon.png" />
+  <link rel="apple-touch-startup-image" href="images/startup.png" />
+  <link type="text/css" rel="stylesheet" href="css/ctpoints.css" />
+
+  <script type="text/javascript" src="js/jquery-1.8.3.min.js"></script>
+  <script type="text/javascript" src="js/iscroll.js"></script>
+  <script type="text/javascript" src="js/ctpoints.js"></script>
+
+  <script>
+
+    $(document).ready(function () {
+      $(".chart").delay(250).fadeIn();
+    });
+
+  </script>
+
+</head>
+
+<body>
+
+  <div class="container" id='socpage'>
+
+    <div class='header'>
+      <div class='titleblock'>
+        <h3>Site of Care</h3>Convenience, Control & Compliance
+      </div>
+      <div class='image'>
+        <img src="images/titleright.png" width="368" height="47" class='title' alt="Clinical Talking Points">
+      </div>
+      <div class='clear'></div>
+    </div>
+    <!--end header-->
+
+    <div class='content'>
+      <div class='contentbox'>
+        <h3 class='title'>Steps to Integration</h3>
+        <hr>
+
+        <img src="images/chart.png" class="chart">
+      </div>
+      <!--end contentbox-->
+
+
+      <div class="menubar">
+        <div class="index">
+          <a href="index.html">
+            <img src="images/homebutton.png" id="homebackground">
+          </a>
+        </div>
+
+        <div class="buttons">
+          <a href="rheumatology.html">
+            <img src="images/topicbackground.png" class="topicbackground">
+            <h3 class="rheum">Rheumatology</h3>
+          </a>
+        </div>
+
+        <div class="buttons">
+          <img src="images/topicbackground.png" class="topicbackground">
+          <h3 class="hometext">Site of Care</h3>
+        </div>
+
+        <div class="buttons">
+          <a href="gastroenterology.html">
+            <img src="images/topicbackground.png" class="topicbackground">
+            <h3 class="gastro">Gastroenterology</h3>
+          </a>
+
+        </div>
+      </div>
+
+
+    </div>
+    <!--end content-->
+
+  </div>
+  <!--end container-->
+
+
+
+
+</body>
+
 </html>

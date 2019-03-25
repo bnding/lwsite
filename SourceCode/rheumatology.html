@@ -19,8 +19,63 @@
     }
 
     .image {
+      position: absolute;
       text-align: right;
+      right: 1%;
       padding-right: 25px;
+    }
+
+    .topicbackground {
+      position: relative;
+      /* float: left; */
+      bottom: 0;
+      margin-left: 50px;
+    }
+
+    .index {
+      position: relative;
+      margin-left: 75px;
+      bottom: -58px;
+    }
+
+    .buttons {
+      position: relative;
+      float: left;
+      margin-left: 155px;
+      bottom: -7px;
+      width: 100px
+    }
+
+    .menubar {
+      margin-left: 16px;
+    }
+
+    .hometext {
+      position: absolute;
+      bottom: inherit;
+      margin-left: 75px;
+      /* width: inherit; */
+      float: inherit;
+      color: white;
+    }
+
+    .soc {
+      position: absolute;
+      bottom: -7px;
+      margin-left: 90px;
+      float: inherit;
+      white-space: nowrap;
+      color: #FFEB56;
+      
+    }
+
+    .gastro {
+      position: absolute;
+      bottom: -7px;
+      margin-left: 65px;
+      float: inherit;
+      white-space: nowrap;
+      color: #FFEB56;
     }
 
     #ref {
@@ -49,7 +104,6 @@
     }
 
 
-    
   </style>
   <title>Clinical Talking Points</title>
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
@@ -110,14 +164,44 @@
         pariatur. Excepteur sint
 
         <img id="ref" src="images/refbttn.png">
-
-
       </div>
       <!--end contentbox-->
+
+      <div class="menubar">
+        <div class="index">
+          <a href="index.html">
+            <img src="images/homebutton.png" id="homebackground">
+          </a>
+        </div>
+
+        <div class="buttons">
+            <img src="images/topicbackground.png" class="topicbackground">
+            <h3 class="hometext">Rheumatology</h3>
+        </div>
+
+        <div class="buttons">
+          <a href="soc.html">
+            <img src="images/topicbackground.png" class="topicbackground">
+            <h3 class="soc">Site of Care</h3>
+          </a>
+        </div>
+
+        <div class="buttons">
+          <a href="gastroenterology.html">
+            <img src="images/topicbackground.png" class="topicbackground">
+            <h3 class="gastro">Gastroenterology</h3>
+          </a>
+
+        </div>
+      </div>
+      <!--end content-->
     </div>
-    <!--end content-->
+
     <img src="images/popup.png" id='popup' alt="Popup Image">
     <img src="images/xbttn.png" id='close' alt="Close Button">
+
+
+
   </div>
   <!--end container-->
 
