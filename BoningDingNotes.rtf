@@ -13,50 +13,45 @@
 \f1\b0 \cf0 1. Do you want me to apply the html text on top of the image or export the image including the text and remove the header and text in the html file?\
 \
 	
-\f2\i I assumed that we would need to apply the text through html so I chose to remove the text on photoshop and imported the image with the background only. This would also help prevent any pixelated text if we choose to ever resize the image in the future.
-\f1\i0 \
-\
-\
-2. What is an opentype format? What does @font-face do?\
-\
-
-\f2\i 	I\'92m not as skilled with CSS. However, googling these questions helped a lot with my CSS ability when working on your project. Implementing the custom fonts into the header and body was very straightforward.\
+\f2\i I assumed that we would need to apply the text through html so I chose to remove the text on photoshop and imported the image with the background only. This would also help prevent any pixelated text if we choose to ever resize the image in the future.\
 \
 \
 
-\f1\i0 3. How do you center text on an image with CSS?\
+\f1\i0 2. How do you center text on an image with CSS?\
 \
 	
-\f2\i As said before, CSS is still new to me. I want to be transparent with my skills so I decided to add this question here. A simple google search helped me solve this issue very quickly.\
+\f2\i CSS is still new to me. I want to be transparent with my skills so I decided to add this question here. A simple google search helped me solve this issue very quickly.\
 \
 \
 
-\f1\i0 4. It was hard for me to change the font size of <body>. So I ended up creating a div for text that were not in a tag (For example\'85 \'93Research and Treatment\'94, \'93Convenience, Control & Compliance\'94, etc.). I made a class=\'93desc\'94 and styled the font-family as MyriadLightIt and font-size of 110%. Since the headers would all need the same text family, I styled h3 and set the font-size to 150%.\
+\f1\i0 3. It was hard for me to change the font size of <body>. So I ended up creating a div for text that were not in a tag (For example\'85 \'93Research and Treatment\'94, \'93Convenience, Control & Compliance\'94, etc.). I made a class=\'93desc\'94 and styled the font-family as MyriadLightIt and font-size of 110%. Since the headers would all need the same text family, I styled h3 and set the font-size to 150%.\
 \
 	
 \f2\i I changed the font size because I noticed that the pdf had larger text than the default size on html. I was trying to be very attentive here.\
 \
 \
 
-\f1\i0 5. Applying a link to the images was not a problem. The area to select a new page when only setting the image was too small and did not include the div that contained the text. So I decided to apply a hyperlink on the entire group (div classes \'93center\'94 and \'93desc\'94).\
+\f1\i0 4. Applying a link to the images was not a problem. The area to select a new page when only setting the image was too small and did not include the div that contained the text. So I decided to apply a hyperlink on the entire group (div classes \'93center\'94 and \'93desc\'94).\
 \
 	
 \f2\i I also made sure that the text would not change color into the standard purple color when apply a hyperlink to text.\
 \
 \
 
-\f1\i0 6. For the image on people, I noticed that there was no transparency in some of the people interacting with each other. This was a simple fix with the quick selection tool and refine edge. I traced and removed the solid white colors with the tool to make it transparent. However, I noticed the image would be very rigid at the edges so I decided to refine the edges and added some feathering. This will prevent the white from showing when it is added into our website.\
+\f1\i0 5. For the image on people, I noticed that there was no transparency in some of the people interacting with each other. This was a simple fix with the quick selection tool and refine edge. I traced and removed the solid white colors with the tool to make it transparent. However, I noticed the image would be very rigid at the edges so I decided to refine the edges and added some feathering. This will prevent the white from showing when it is added into our website.\
 \
 	
 \f2\i Some concerns I noticed with this image was the resolution. It seems like the image is a little bit too pixelated for the website.\
 \
 
 \f1\i0 \
-7. Is there a way to align the image without needing to eyeball it?\
+6. Is there a way to align the image without needing to eyeball it?\
 \
 	
 \f2\i I couldn\'92t figure out another way to change the position of the bottom image other than manually changing it. (top: 64%)
 \f1\i0 \
+\
+\
 \
 \
 \pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardeftab720\ri0\partightenfactor0
@@ -67,13 +62,24 @@
 \f1\b0 \cf0 \
 1. I decided to add a fade in and fade out animation to the text since it is pretty simply to do so with jQuery.\
 \
+\
 2. The biggest issue that I had with the project was the menu bar. I know how to center align text into an image (as seen in index.html). However, when I applied margins to my buttons, the text would center align to where the image was initially before applying margins. I attempted inheriting the css settings from its parent but it would misalign too far to the right. Therefore, due to time constraints, I was only able to eyeball the distance of the text in the menu selections.\
 \
 	
 \f2\i My question if I were to be working here: How do you center align text onto an image that has already been styled and positioned to a different location?
 \f1\i0 \
 \
+\
 3. I tried to make sure that all the images were in similar positions to the pdf.\
+\
+\
+4. A question I would ask would be if we should allow the user to interact with the menu bar if the user is viewing the image popped up by the \'93reference\'94 bar.\
+\
+	
+\f2\i I made it so that the user needs to exit out of the image first before they are able to interact with the menu bar. This is easily done with z-index.
+\f1\i0 \
+\
+\
 \
 \
 \pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardeftab720\ri0\partightenfactor0
@@ -91,4 +97,15 @@
 \f1\i0 For the animation on the image, I decided to keep the animation consistent to soc.html and have it fade in. I added a delay this time since I want it to fade in a bit after the document is ready.
 \f2\i \
 \
+\
+\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardeftab720\ri0\partightenfactor0
+
+\f0\i0\b \cf0 gastroenterology.html
+\f1\b0 \
+\
+1. Look at website for issues that I had with the scroll bar. Unfortunately, I was only able to get it to partially work.\
+\
+2. Everything else was very straightforward.
+\f2\i \
 }

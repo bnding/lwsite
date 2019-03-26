@@ -1,45 +1,258 @@
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml">
-  <head>
-    <title>Clinical Talking Points</title>
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
-    <meta name="apple-mobile-web-app-capable" content="yes" />
-    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
-    <meta name = "format-detection" content = "telephone=no">
-    <link rel="apple-touch-icon-precomposed" href="images/icon.png" />
-    <link rel="apple-touch-startup-image" href="images/startup.png" />
-    <link type="text/css" rel="stylesheet" href="css/ctpoints.css" />
 
-    <script type="text/javascript" src="js/jquery-1.8.3.min.js"></script>
-    <script type="text/javascript" src="js/iscroll.js"></script>
-    <script type="text/javascript" src="js/ctpoints.js"></script>
+<head>
+  <style>
+    @import url('fonts/fonts-min.css');
 
-  </head>
-  <body>
+    h3 {
+      font-family: MyriadSemibold;
+    }
 
-    <div class="container" id='gastropage'>
-    
-    	<div class='header'>
-   	    	<div class='titleblock'><h3>Gastroenterology</h3>Crohn's Disease, Ulcerative Colitis</div>
-            <img src="" width="368" height="47"  class='' alt="Clinical Talking Points">
-            <div class='clear'></div>
-        </div><!--end header-->
-        
-    	<div class='content'>
-    		<div class='contentbox'>
-            	<div class='left'>Developmental <br/>Risk Factors <br/>and <br/>Treatment</div>
-                <div class='clear'></div>
-            </div><!--end contentbox-->
-            
-            
-            
-        </div><!--end content-->
-        
-    </div><!--end container-->
+    hr {
+      position: relative;
+      top: 50px;
+      width: 95%;
+    }
 
-    
+    .titleblock {
+      font-family: MyriadLightIt;
+    }
 
-    
-  </body>
+    .contentbox {
+      font-family: MyriadLightIt;
+      font-size: x-large;
+    }
+
+    .image {
+      position: absolute;
+      right: 35px;
+    }
+
+    .topicbackground {
+      position: relative;
+      /* float: left; */
+      bottom: 0;
+      margin-left: 50px;
+    }
+
+    .index {
+      position: relative;
+      margin-left: 75px;
+      bottom: -58px;
+    }
+
+    .buttons {
+      position: relative;
+      float: left;
+      margin-left: 155px;
+      bottom: -7px;
+      width: 100px
+    }
+
+    .menubar {
+      margin-left: 16px;
+    }
+
+    .hometext {
+      position: absolute;
+      bottom: -7px;
+      margin-left: 65px;
+      /* width: inherit; */
+      float: inherit;
+      white-space: nowrap;
+      color: white;
+    }
+
+    .rheum {
+      position: absolute;
+      bottom: -7px;
+      margin-left: 75px;
+      float: inherit;
+      white-space: nowrap;
+      color: #FFEB56;
+
+    }
+
+    .soc {
+      position: absolute;
+      bottom: -7px;
+      margin-left: 90px;
+      float: inherit;
+      white-space: nowrap;
+      color: #FFEB56;
+    }
+
+    .contentheader {
+      position: absolute;
+      font-size: 22px;
+      top: 10px;
+    }
+
+    .handshake {
+      position: absolute;
+      bottom: 0px;
+    }
+
+    #wrapper {
+      padding-top: -10px;
+      padding-right: 25px;
+      top: 25px;
+      font-size: 19px;
+    }
+  </style>
+
+
+
+  <title>Clinical Talking Points</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  <meta name="format-detection" content="telephone=no">
+  <link rel="apple-touch-icon-precomposed" href="images/icon.png" />
+  <link rel="apple-touch-startup-image" href="images/startup.png" />
+  <link type="text/css" rel="stylesheet" href="css/ctpoints.css" />
+
+  <script type="text/javascript" src="js/jquery-1.8.3.min.js"></script>
+  <script type="text/javascript" src="js/ctpoints.js"></script>
+  <script type="text/javascript" src="js/iscroll.js"></script>
+
+  <script type="text/javascript">
+    var myScroll;
+
+    function loaded() {
+      myScroll = new iScroll('wrapper', {
+        scrollbars: true,
+      });
+    }
+  </script>
+
+</head>
+
+<body onload="loaded()">
+
+  <div class="container" id='gastropage'>
+
+    <div class='header'>
+      <div class='titleblock'>
+        <h3>Gastroenterology</h3>Crohn's Disease, Ulcerative Colitis
+      </div>
+
+      <div class="image">
+        <img src="images/titleright.png" width="368" height="47" class='title' alt="Clinical Talking Points">
+      </div>
+      <div class='clear'></div>
+    </div>
+    <!--end header-->
+
+    <div class='content'>
+      <div class='contentbox'>
+        <div class='left'>
+          <h3 class="contentheader">Developmental <br />Risk Factors <br />and <br />Treatment<h3>
+              <img src="images/handshake.png" class="handshake" alt="Handshake">
+        </div>
+        <div id="wrapper">
+          <div>
+            <p>
+              <h3>Unable to complete this part. It can scroll when you use the mouse and drag up from the bottom. Looked
+                into github forums and worked when I tested it with my own
+                example. Somehow not working here... <br>
+              </h3>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla id diam sit amet enim tempor suscipit id at
+              purus. Suspendisse potenti. Mauris vehicula risus porta risus porttitor, nec rhoncus mauris mattis.
+              Quisque
+              eget eros metus. Maecenas maximus volutpat felis eget posuere. Pellentesque malesuada lacus eget est
+              tempus,
+              vel vehicula felis bibendum. Donec vel elit eget lacus molestie auctor. Etiam congue elementum nibh, nec
+              auctor dolor.
+            </p>
+
+            <p>
+              In nibh odio, consectetur eget sapien luctus, sagittis congue quam. Aenean consectetur finibus diam vitae
+              aliquet. Phasellus at sapien sapien. Duis vestibulum massa viverra auctor ullamcorper. Phasellus ut
+              ullamcorper metus. Phasellus cursus urna ac pharetra mattis. Vestibulum sit amet pharetra ipsum, ac
+              convallis magna. Vivamus et est sit amet nisl consequat ullamcorper. Morbi vel mauris et orci sollicitudin
+              fringilla et eu justo. Nunc non ligula leo. Fusce ex orci, placerat non rutrum at, rhoncus at arcu. Duis a
+              lorem pulvinar, aliquam nisl eget, luctus orci. Etiam consequat lorem quis ex eleifend, sit amet tempus
+              tortor pulvinar. Mauris pulvinar nibh est, vel fermentum massa luctus ut. Nunc vitae maximus odio, vel
+              iaculis turpis.
+            </p>
+
+            <p>
+              Sed leo purus, consequat placerat metus sed, lobortis luctus justo. Interdum et malesuada fames ac ante
+              ipsum primis in faucibus. Vestibulum gravida rutrum orci, non pretium augue aliquet in. Nulla id semper
+              ante. Maecenas posuere felis a sollicitudin interdum. Donec fringilla fringilla sapien eu tincidunt.
+              Nullam
+              venenatis pretium condimentum. Sed dolor justo, molestie sit amet nisi finibus, rutrum sagittis orci. Sed
+              euismod nec magna auctor vulputate. Cras faucibus dolor sed diam auctor venenatis at eget diam. Aenean
+              lobortis, ipsum in vestibulum pulvinar, risus lectus iaculis sem, quis elementum velit odio non urna. Sed
+              tincidunt ut ante et pretium. In auctor diam in nulla iaculis dignissim.
+            </p>
+
+            <p>
+              Donec tempor, sapien sit amet porta dignissim, turpis arcu mollis odio, et faucibus nulla nibh in ante.
+              Etiam bibendum facilisis condimentum. Nunc accumsan commodo tempus. Etiam vestibulum lorem a odio aliquam
+              porttitor. In dui ex, rutrum ac nunc eget, consectetur facilisis augue. Morbi dictum elementum ligula, ut
+              congue justo pharetra ac. Nunc malesuada porta nisl, eu interdum lectus scelerisque vitae.
+            </p>
+
+            <p>
+              Maecenas condimentum sagittis enim eu faucibus. Phasellus fringilla, tellus eu feugiat imperdiet, sem sem
+              scelerisque mauris, at dictum risus quam sit amet lacus. Vestibulum porta, dolor id egestas accumsan,
+              augue
+              nisl convallis quam, et ullamcorper eros est non est. Sed quis mauris sagittis, gravida ipsum ut,
+              vestibulum
+              dolor. Quisque tempus fringilla urna, vitae pretium sem fringilla eu. In id turpis massa. Quisque eget dui
+              nisl. Quisque at est ut augue ultrices tristique. Proin ut iaculis purus, a accumsan ligula. Curabitur sit
+              amet libero luctus, accumsan dui at, pulvinar nulla. Integer tempus, diam ac sodales semper, quam ipsum
+              fermentum nisl, vitae congue tellus leo in dui. Mauris odio neque, elementum vitae consectetur eu,
+              pharetra
+              sed justo. Donec eleifend dolor non eleifend porta. Morbi a luctus dolor.
+            </p>
+          </div>
+        </div>
+        <div class='clear'></div>
+
+      </div>
+      <!--end contentbox-->
+
+      <div class="menubar">
+        <div class="index">
+          <a href="index.html">
+            <img src="images/homebutton.png" id="homebackground">
+          </a>
+        </div>
+
+        <div class="buttons">
+          <a href="rheumatology.html">
+            <img src="images/topicbackground.png" class="topicbackground">
+            <h3 class="rheum">Rheumatology</h3>
+          </a>
+        </div>
+
+        <div class="buttons">
+          <a href="soc.html">
+            <img src="images/topicbackground.png" class="topicbackground">
+            <h3 class="soc">Site of Care</h3>
+          </a>
+        </div>
+
+        <div class="buttons">
+          <img src="images/topicbackground.png" class="topicbackground">
+          <h3 class="hometext">Gastroenterology</h3>
+        </div>
+      </div>
+
+    </div>
+    <!--end content-->
+
+  </div>
+  <!--end container-->
+
+
+
+
+</body>
+
 </html>
